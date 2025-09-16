@@ -1,1 +1,0 @@
-import{d as o,h as r,o as e,a as n,g as a,D as c,u as i,c as _,E as l,i as m,G as u,H as d}from"./DDl2FGvW.js";const $=o({__name:"default",setup(f){const s=r();return(t,p)=>(e(),n("div",null,[a(c),i(s).isGreaterThan("mobileWide")?m("",!0):(e(),_(l,{key:0})),u(t.$slots,"default"),a(d)]))}});export{$ as default};
