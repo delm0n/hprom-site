@@ -1,0 +1,1 @@
+import{d as o,u as r,c as n,o as e,f as a,g as c,a as _,I as i,J as l,e as m,K as f,L as u}from"./DMx9BhZL.js";const $=o({__name:"default",setup(d){const s=r();return(t,p)=>(e(),n("div",null,[a(l),m(s).isGreaterThan("mobileWide")?_("",!0):(e(),c(f,{key:0})),i(t.$slots,"default"),a(u)]))}});export{$ as default};
