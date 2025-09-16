@@ -28,11 +28,16 @@
           :key="i"
           class="apparat-item"
         >
-          <NuxtPicture
+          <!-- <NuxtPicture
             format="avif,webp"
             :src="'/images/organizacija/dejatelnost/' + item.src + '.png'"
             :alt="item.alt"
             sizes="330px"
+            loading="lazy"
+          /> -->
+          <img
+            :src="'/images/organizacija/dejatelnost/' + item.src + '.png'"
+            :alt="item.alt"
             loading="lazy"
           />
         </swiper-slide>

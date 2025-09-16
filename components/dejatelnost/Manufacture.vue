@@ -1,12 +1,18 @@
 <template>
   <section class="dejatelnost-text">
     <div class="content-img skeleton-image">
-      <NuxtPicture
+      <!-- <NuxtPicture
         format="avif,webp"
         sizes="1000px"
         width="100%"
         :src="'/images/organizacija/dejatelnost/dejatelnost.png'"
         :alt="'деятельность'"
+      /> -->
+      <img
+        :src="'/images/organizacija/dejatelnost/dejatelnost.png'"
+        :alt="'деятельность'"
+        sizes="1000px"
+        width="100%"
       />
     </div>
 

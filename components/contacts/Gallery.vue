@@ -30,6 +30,16 @@
               :src="'/images/workspace/' + item.src + '.png'"
               :alt="item.alt"
             />
+            <!-- <NuxtPicture
+              format="avif,webp"
+              sizes="600px"
+              :src="'/images/workspace/' + item.src + '.png'"
+              :alt="item.alt"
+            /> -->
+            <img
+              :src="'/images/workspace/' + item.src + '.png'"
+              :alt="item.alt"
+            />
           </div>
         </swiper-slide>
       </swiper-container>
