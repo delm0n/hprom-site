@@ -1,0 +1,29 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "deploy": "npm run generate && gh-pages -d dist"
+  },
+  "dependencies": {
+    "@nuxt/image": "^1.8.1",
+    "@pinia/nuxt": "^0.9.0",
+    "click-outside-vue3": "^4.0.1",
+    "nuxt": "^3.14.1592",
+    "nuxt-swiper": "^2.0.0",
+    "nuxt-viewport": "^2.2.0",
+    "pinia": "^2.3.0",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vue-the-mask": "^0.11.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass-embedded": "^1.83.0"
+  }
+}

@@ -1,0 +1,19 @@
+@use "sass:math";
+
+@mixin grid-content($columns, $rows, $selector) {
+  // Количество колонок $columns
+  // Количество строк $rows
+
+  // после обработки для 3на3 получается что-то типа .media-item:nth-child(9n + 1) { grid-col: 1; grid-row: 1 } ...
+  // ... и так далее до .media-item:nth-child(9n + 9) { grid-col: 3; grid-row: 3 }
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-template-rows: repeat($rows, 1fr);
+
+  @for $i from 1 through $columns * $rows {
+    #{$selector}:nth-child(#{$columns * $rows}n + #{$i}) {
+      grid-column: if(($i - 1) % $columns == 0, 1, ($i - 1) % $columns + 1);
+      grid-row: math.floor(math.div($i - 1, $columns)) + 1;
+    }
+  }
+}
