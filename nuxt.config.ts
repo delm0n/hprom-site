@@ -38,15 +38,6 @@ export default defineNuxtConfig({
 
   image: {
     provider: 'local',
-    // Параметры адаптивных изображений
-    screens: {
-      'xs': 320,
-      'sm': 576,
-      'md': 768,
-      'lg': 992,
-      'xl': 1200,
-      'xxl': 1536,
-    },
   },
 
   viewport: {
