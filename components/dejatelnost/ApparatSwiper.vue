@@ -36,9 +36,10 @@
             loading="lazy"
           /> -->
           <img
-            :src="'/images/organizacija/dejatelnost/' + item.src + '.png'"
+            :src="'./images/organizacija/dejatelnost/' + item.src + '.png'"
             :alt="item.alt"
             loading="lazy"
+            width="330px"
           />
         </swiper-slide>
       </swiper-container>

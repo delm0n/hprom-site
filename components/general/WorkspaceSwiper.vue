@@ -27,10 +27,16 @@
           :key="index"
           class="workspace-item"
         >
-          <NuxtPicture
+          <!-- <NuxtPicture
             format="avif,webp"
             sizes="100vw xs:700px sm:300px lg:360px xl:420px"
             :src="'/images/workspace/' + item.src + '.png'"
+            :alt="item.alt"
+            loading="lazy"
+          /> -->
+
+          <img
+            :src="'./images/workspace/' + item.src + '.png'"
             :alt="item.alt"
             loading="lazy"
           />

@@ -5,12 +5,19 @@
         <slot></slot>
       </div>
       <div class="resume-wrapper__img skeleton-image">
-        <NuxtPicture
+        <!-- <NuxtPicture
           format="avif,webp"
           sizes="670px"
           :src="'/images/vakansii/resume.png'"
           :alt="'Резюме'"
           loading="lazy"
+        /> -->
+
+        <img
+          :src="'./images/vakansii/resume.png'"
+          :alt="'Резюме'"
+          loading="lazy"
+          width="670"
         />
       </div>
     </div>

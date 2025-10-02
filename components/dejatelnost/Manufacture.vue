@@ -9,9 +9,8 @@
         :alt="'деятельность'"
       /> -->
       <img
-        :src="'/images/organizacija/dejatelnost/dejatelnost.png'"
+        :src="'./images/organizacija/dejatelnost/dejatelnost.png'"
         :alt="'деятельность'"
-        sizes="1000px"
         width="100%"
       />
     </div>

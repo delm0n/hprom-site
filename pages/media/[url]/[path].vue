@@ -14,11 +14,17 @@
 
         <div class="news-wrapper__content">
           <div class="content-img skeleton-image">
-            <NuxtPicture
+            <!-- <NuxtPicture
               format="avif,webp"
               sizes="1000px"
               width="100%"
               :src="'/images/media/' + news.img + '.png'"
+              :alt="news.title"
+            /> -->
+
+            <img
+              width="100%"
+              :src="'./images/media/' + news.img + '.png'"
               :alt="news.title"
             />
 

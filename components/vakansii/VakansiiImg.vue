@@ -1,9 +1,15 @@
 <template>
   <div class="otdel-wrapper skeleton-image">
-    <NuxtPicture
+    <!-- <NuxtPicture
       format="avif,webp"
       sizes="1000px"
       :src="'/images/vakansii/' + vakansii.imgVakansii + '.png'"
+      :alt="vakansii.title"
+    /> -->
+
+    <img
+      width="1000"
+      :src="'./images/vakansii/' + vakansii.imgVakansii + '.png'"
       :alt="vakansii.title"
     />
 

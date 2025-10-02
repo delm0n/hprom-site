@@ -2,13 +2,16 @@
   <footer class="footer">
     <div class="container">
       <div v-if="!viewport.isGreaterOrEquals('tablet')" class="mobile-header">
-        <NuxtPicture
+        <!-- <NuxtPicture
           format="avif,webp"
           sizes="77px"
           width="77"
           :src="'/images/layout/logo.png'"
           alt="Хеликон"
-        />
+        /> -->
+
+        <img width="77" :src="'./images/layout/logo.png'" alt="Хеликон" />
+
         <div class="footer__border"></div>
       </div>
 
@@ -16,12 +19,15 @@
         <helicon-footer-links />
         <div class="footer__column-info">
           <div class="footer__column-phone">
-            <NuxtPicture
+            <!-- <NuxtPicture
               format="avif,webp"
               sizes="28px"
               :src="'/images/layout/phone.png'"
               alt="#"
-            />
+            /> -->
+
+            <img width="28" :src="'./images/layout/phone.png'" alt="#" />
+
             <a class="footer__phone" href="tel:88002505932">8 800 250 59 32 </a>
           </div>
           <ul>
@@ -41,13 +47,15 @@
       <div class="footer__bottom">
         <div class="footer__bottom-info">
           <div v-if="viewport.isGreaterOrEquals('tablet')" class="footer__logo">
-            <NuxtPicture
+            <!-- <NuxtPicture
               format="avif,webp"
               sizes="103px"
               width="103"
               :src="'/images/layout/logo.png'"
               alt="Хеликон"
-            />
+            /> -->
+
+            <img width="103" :src="'./images/layout/logo.png'" alt="Хеликон" />
           </div>
           <p class="footer__copyright">
             © 2010-{{ year }}<br />
@@ -55,10 +63,16 @@
           </p>
         </div>
         <div class="footer__bottom-dropdown">
-          <NuxtPicture
+          <!-- <NuxtPicture
             format="avif,webp"
             sizes="181px"
             :src="'/images/layout/dropdown.png'"
+            alt="Русский язык"
+          /> -->
+
+          <img
+            width="181"
+            :src="'./images/layout/dropdown.png'"
             alt="Русский язык"
           />
         </div>

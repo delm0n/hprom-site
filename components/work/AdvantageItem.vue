@@ -2,10 +2,17 @@
   <div class="advantages-item">
     <div class="img-box">
       <div class="skeleton-image">
-        <NuxtPicture
+        <!-- <NuxtPicture
           format="avif,webp"
           sizes="300px"
           :src="'/images/advantages/' + item.img + '.png'"
+          :alt="item.title"
+          loading="lazy"
+        /> -->
+
+        <img
+          width="300"
+          :src="'./images/advantages/' + item.img + '.png'"
           :alt="item.title"
           loading="lazy"
         />

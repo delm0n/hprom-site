@@ -18,10 +18,16 @@
             class="vakansii-item"
           >
             <div class="vakansii-item__img skeleton-image">
-              <NuxtPicture
+              <!-- <NuxtPicture
                 format="avif,webp"
                 sizes="840px"
                 :src="'/images/vakansii/' + item.imgVakansii + '.png'"
+                :alt="item.title"
+              /> -->
+
+              <img
+                width="840"
+                :src="'./images/vakansii/' + item.imgVakansii + '.png'"
                 :alt="item.title"
               />
             </div>

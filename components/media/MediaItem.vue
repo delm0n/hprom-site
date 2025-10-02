@@ -1,10 +1,16 @@
 <template>
   <div class="media-item">
     <div class="media-item__img skeleton-image">
-      <NuxtPicture
+      <!-- <NuxtPicture
         format="avif,webp"
         sizes="500px"
         :src="'/images/media/' + item.img + '.png'"
+        :alt="item.title"
+      /> -->
+
+      <img
+        width="500"
+        :src="'./images/media/' + item.img + '.png'"
         :alt="item.title"
       />
     </div>

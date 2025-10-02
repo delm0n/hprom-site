@@ -24,12 +24,6 @@
           class="gallery-item"
         >
           <div class="gallery-item__img">
-            <NuxtPicture
-              format="avif,webp"
-              sizes="600px"
-              :src="'/images/workspace/' + item.src + '.png'"
-              :alt="item.alt"
-            />
             <!-- <NuxtPicture
               format="avif,webp"
               sizes="600px"
@@ -37,7 +31,7 @@
               :alt="item.alt"
             /> -->
             <img
-              :src="'/images/workspace/' + item.src + '.png'"
+              :src="'./images/workspace/' + item.src + '.png'"
               :alt="item.alt"
             />
           </div>

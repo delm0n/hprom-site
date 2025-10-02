@@ -20,10 +20,16 @@
         </button>
       </div>
       <div class="workmain-wrapper__img skeleton-image">
-        <NuxtPicture
+        <!-- <NuxtPicture
           format="avif,webp"
           sizes="670px"
           :src="'/images/work/' + work.path + '-img.png'"
+          :alt="'Резюме'"
+        /> -->
+
+        <img
+          width="670"
+          :src="'./images/work/' + work.path + '-img.png'"
           :alt="'Резюме'"
         />
       </div>

@@ -39,14 +39,16 @@ const viewport = useViewport();
           </svg>
         </div>
         <NuxtLink to="/" class="header-wrapper__logo">
-          <NuxtPicture
+          <!-- <NuxtPicture
             preload
             format="avif,webp"
             sizes="103px"
             width="103"
             :src="'/images/layout/logo.png'"
             alt="Хеликон"
-          />
+          /> -->
+
+          <img width="103" :src="'./images/layout/logo.png'" alt="Хеликон" />
         </NuxtLink>
 
         <helicon-header-contact />

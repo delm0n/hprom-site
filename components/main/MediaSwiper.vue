@@ -37,10 +37,18 @@
         class="media-item"
       >
         <div class="media-item__img skeleton-image">
-          <NuxtPicture
+          <!-- <NuxtPicture
             format="avif,webp"
             sizes="420px"
             :src="'/images/media/' + slide.img + '.png'"
+            :alt="slide.title"
+            loading="lazy"
+            class="media-item__img-img"
+          /> -->
+
+          <img
+            width="420"
+            :src="'./images/media/' + slide.img + '.png'"
             :alt="slide.title"
             loading="lazy"
             class="media-item__img-img"
@@ -75,10 +83,17 @@
 
       <swiper-slide class="media-item last-slide">
         <div class="last-slide__img">
-          <NuxtPicture
+          <!-- <NuxtPicture
             format="avif,webp"
             sizes="247px"
             :src="'/images/media/last-slide.png'"
+            :alt="'Новости геликон'"
+            loading="lazy"
+          /> -->
+
+          <img
+            width="247"
+            :src="'./images/media/last-slide.png'"
             :alt="'Новости геликон'"
             loading="lazy"
           />
